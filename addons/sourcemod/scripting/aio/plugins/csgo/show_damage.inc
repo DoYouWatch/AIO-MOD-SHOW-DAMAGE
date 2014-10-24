@@ -14,7 +14,8 @@
 //***********************************//
 //*************DEFINE****************//
 //***********************************//
-#define TAG_SHOW_DAMAGE_CSGO "[AIO SHOW DAMAGE] - "
+#define TAG_SHOW_DAMAGE_CSGO 				"[AIO SHOW DAMAGE] - "
+#define PLUGIN_VERSION_SHOW_DAMAGE_CSGO		"1.0.0"
 
 
 //***********************************//
@@ -34,7 +35,7 @@ new bool:B_active_show_damage_csgo_dev				= false;
 /***********************************************************/
 public OnPluginStartShowDamageCsgo()
 {
-	CreateConVar("aio_show_damage_version", PLUGIN_VERSION, "Version", CVARS);
+	CreateConVar("aio_show_damage_version", PLUGIN_VERSION_SHOW_DAMAGE_CSGO, "Version", CVARS);
 	
 	cvar_active_show_damage_csgo 					= CreateConVar("active_show_damage_csgo",  				"0", 					"Enable/Disable Show Damage", 		DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
 	cvar_active_show_damage_csgo_dev				= CreateConVar("active_show_damage_csgo_dev", 			"0", 					"Enable/Disable Show Damage Dev", 	DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
